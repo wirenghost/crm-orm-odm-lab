@@ -30,6 +30,10 @@ async function update(req, res) {
   if (!contact) {
     return res.status(404).json({ error: 'Contact not found' });
   }
+  
+  await contact.update(req.body, {
+    fields: ['firstName', 'lastName', 'email', 'phone', 'companyId']
+  });
 
   // TODO CHALLENGE 07: actualizar el contacto con los datos recibidos en req.body
 
