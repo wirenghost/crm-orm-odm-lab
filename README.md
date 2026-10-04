@@ -163,3 +163,4 @@ El reto 08 fue el que más me costó porque la respuesta seguía mostrando los d
 Revisé `update` en `controllers/activities.js` y agregué `new: true` para devolver el documento actualizado. Al volver a ejecutar la prueba, pasaron los cinco casos.
 
 ## Evidencia
+![Captura](./evidencia/captura.png)
